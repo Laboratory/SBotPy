@@ -10,13 +10,14 @@ cur = con.cursor()
 
 print "Bot running..."
 mutewords = ["yolo",
-             "y o l o"
-			]
+             "y o l o"] # Add your own mutewords (words that trigger chat muting) in the format 
+             # "word",
 
 responses = {'hello, bot':  "Hi, %user%!",
-            }
+            } # To add your own responses, add in the format
+            # 'Message from user': "Bots response",
 
-chat = s.Chat('chatidgoes here')
+chat = s.Chat('CHAT_ID') # Find the skype conversation's ID and replace CHAT_ID with the value
 mutes = {}
 
 def send (msg):
